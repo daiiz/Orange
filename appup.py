@@ -31,8 +31,7 @@ def gyazo ():
 def detect ():
     got_json = request.json
     if ('image' in got_json):
-        image_base64_str = got_json['image'].replace('data:image/jpeg;base64,', '')
-        image_base64_str = image_base64_str.replace('data:image/png;base64,', '')
+        image_base64_str = got_json['image']
         img_jpg = image_base64_str.decode('base64')
         image_content = base64.b64encode(img_jpg)
         res_json = goog_cloud_vision_text(image_content)

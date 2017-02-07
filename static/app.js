@@ -20,7 +20,7 @@ class Yui2 {
         $.ajax({
             url: '/api/v0/detect',
             data: JSON.stringify({
-                image: base64img
+                image: base64img.replace(/^data:image\/(.+);base64,/, '')
             }),
             type: "POST",
             contentType:'application/json',
