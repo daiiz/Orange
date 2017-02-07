@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>🍊 Orange</title>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/static/app.css">
+    </head>
+    <body>
+        <div id="head">
+            <div id="title">Demo</div>
+        </div>
+
+        <div id="description">
+            デモです。
+        </div>
+
+        <div id="photo">
+            <div class='msg'>
+                写真をドラッグアンドドロップ
+            </div>
+            <span id="fg"></span>
+        </div>
+        <div class="btns">
+            <center>
+                <input type="button" id="btn-send" value="送信">
+            </center>
+        </div>
+
+        <div id="response">
+            <img src="/static/b.jpg" id="res-img">
+            <br>
+            <span id="res-e"></span>
+            <div class="btns">
+                <center>
+                    <input type="button" id="btn-gyazo" value="Gyazo it!">
+                </center>
+            </div>
+        </div>
+
+        <div id="cc">
+            制作: <a href="https://twitter.com/daizplus" target="_blank">@daizplus</a>　|　
+            <a href="#" target="_blank">この実験について</a>
+        </div>
+        <img src='#' id='gyazo-session' class='bg-work'>
+        <script src="/static/app.js"></script>
+    </body>
+</html>
